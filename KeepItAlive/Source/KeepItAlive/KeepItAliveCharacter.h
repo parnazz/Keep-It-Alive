@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "PaperCharacter.h"
+#include "BasicProjectile.h"
 #include "KeepItAliveCharacter.generated.h"
 
 class UTextRenderComponent;
@@ -31,22 +32,51 @@ class AKeepItAliveCharacter : public APaperCharacter
 
 	UTextRenderComponent* TextComponent;
 	virtual void Tick(float DeltaSeconds) override;
-protected:
-	// The animation to play while running around
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Animations)
-	class UPaperFlipbook* RunningAnimation;
+	virtual void BeginPlay() override;
 
-	// The animation to play while idle (standing still)
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Animations)
+	class UPaperFlipbook* BackwardAnimation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+	class UPaperFlipbook* ForwardAnimation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+	class UPaperFlipbook* SideAnimation;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
 	class UPaperFlipbook* IdleAnimation;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+	class UPaperFlipbook* AttackAnimation;
+
+	UPROPERTY()
+	class APlayerController* PlayerController;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Attacking")
+	TSubclassOf<ABasicProjectile> BasicProjectileClass;
+
+	UPROPERTY(EditAnywhere, Category = "Attacking")
+	class UArrowComponent* ShootingOffset;
+
+	UPROPERTY(EditAnywhere, Category = "Attacking")
+	FRotator ShootBasicAttackRotation;
+
 	/** Called to choose the correct animation to play based on the character's movement state */
-	void UpdateAnimation();
+	void UpdateAnimation(float DeltaSeconds);
 
 	/** Called for side to side input */
 	void MoveRight(float Value);
 
+	void MoveUp(float Value);
+
 	void UpdateCharacter();
+
+	void BasicAttack();
+
+	void SpawnProjectile();
+
+	void SetDesiredAnimation(class UPaperFlipbook* DesiredAnimation);
 
 	/** Handle touch inputs. */
 	void TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location);
@@ -57,6 +87,9 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
+
+	bool bIsPlayerAttacking = false;
+	float AttackAnimationCountdown;
 
 public:
 	AKeepItAliveCharacter();

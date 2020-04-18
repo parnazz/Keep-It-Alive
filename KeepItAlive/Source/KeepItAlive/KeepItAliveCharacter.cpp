@@ -5,10 +5,13 @@
 #include "Components/TextRenderComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/ArrowComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "GameFramework/PlayerController.h"
 #include "Camera/CameraComponent.h"
+#include "DrawDebugHelpers.h"
 
 DEFINE_LOG_CATEGORY_STATIC(SideScrollerCharacter, Log, All);
 
@@ -26,26 +29,6 @@ AKeepItAliveCharacter::AKeepItAliveCharacter()
 	GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
 	GetCapsuleComponent()->SetCapsuleRadius(40.0f);
 
-	// Create a camera boom attached to the root (capsule)
-	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 500.0f;
-	CameraBoom->SocketOffset = FVector(0.0f, 0.0f, 75.0f);
-	CameraBoom->SetUsingAbsoluteRotation(true);
-	CameraBoom->bDoCollisionTest = false;
-	CameraBoom->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
-	
-
-	// Create an orthographic camera (no perspective) and attach it to the boom
-	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
-	SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
-	SideViewCameraComponent->OrthoWidth = 2048.0f;
-	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
-
-	// Prevent all automatic rotation behavior on the camera, character, and camera component
-	CameraBoom->SetUsingAbsoluteRotation(true);
-	SideViewCameraComponent->bUsePawnControlRotation = false;
-	SideViewCameraComponent->bAutoActivate = true;
 	GetCharacterMovement()->bOrientRotationToMovement = false;
 
 	// Configure character movement
@@ -65,40 +48,100 @@ AKeepItAliveCharacter::AKeepItAliveCharacter()
 	// behavior on the edge of a ledge versus inclines by setting this to true or false
 	GetCharacterMovement()->bUseFlatBaseForFloorChecks = true;
 
-    // 	TextComponent = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarGear"));
-    // 	TextComponent->SetRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
-    // 	TextComponent->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
-    // 	TextComponent->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
-    // 	TextComponent->SetupAttachment(RootComponent);
+	ShootingOffset = CreateDefaultSubobject<UArrowComponent>("Shooting Offset");
+	ShootingOffset->SetupAttachment(RootComponent);
 
 	// Enable replication on the Sprite component so animations show up when networked
 	GetSprite()->SetIsReplicated(true);
 	bReplicates = true;
+
+	AttackAnimationCountdown = 0.f;
 }
 
 //////////////////////////////////////////////////////////////////////////
 // Animation
 
-void AKeepItAliveCharacter::UpdateAnimation()
+void AKeepItAliveCharacter::UpdateAnimation(float DeltaSeconds)
 {
 	const FVector PlayerVelocity = GetVelocity();
 	const float PlayerSpeedSqr = PlayerVelocity.SizeSquared();
 
-	// Are we moving or standing still?
-	UPaperFlipbook* DesiredAnimation = (PlayerSpeedSqr > 0.0f) ? RunningAnimation : IdleAnimation;
-	if( GetSprite()->GetFlipbook() != DesiredAnimation 	)
+	UPaperFlipbook* DesiredAnimation;
+
+	if (bIsPlayerAttacking)
 	{
-		GetSprite()->SetFlipbook(DesiredAnimation);
+		DesiredAnimation = AttackAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		AttackAnimationCountdown += DeltaSeconds;
+
+		if (AttackAnimationCountdown >= GetSprite()->GetFlipbookLength())
+		{
+			SpawnProjectile();
+			bIsPlayerAttacking = false;
+			AttackAnimationCountdown = 0.f;
+		}
+
+		return;
 	}
+
+	if (PlayerVelocity.Z < 0.f)
+	{
+		DesiredAnimation = ForwardAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		return;
+	}
+
+	if (PlayerVelocity.Z > 0.f)
+	{
+		DesiredAnimation = BackwardAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		return;
+	}
+
+	if (PlayerVelocity.X < 0.f)
+	{
+		DesiredAnimation = SideAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		return;
+	}
+
+	if (PlayerVelocity.X > 0.f)
+	{
+		DesiredAnimation = SideAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		return;
+	}
+
+	if (PlayerVelocity.Z == 0.f && PlayerVelocity.X == 0.f)
+	{
+		DesiredAnimation = IdleAnimation;
+		SetDesiredAnimation(DesiredAnimation);
+		return;
+	}
+
+
 }
 
 void AKeepItAliveCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 	
-	UpdateCharacter();	
+	UpdateAnimation(DeltaSeconds);
+
+	UpdateCharacter();
 }
 
+void AKeepItAliveCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	PlayerController = Cast<APlayerController>(GetController());
+
+	if (PlayerController)
+	{
+		PlayerController->bShowMouseCursor = true;
+	}
+}
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -106,9 +149,11 @@ void AKeepItAliveCharacter::Tick(float DeltaSeconds)
 void AKeepItAliveCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Note: the 'Jump' action and the 'MoveRight' axis are bound to actual keys/buttons/sticks in DefaultInput.ini (editable from Project Settings..Input)
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	/*PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);*/
+	PlayerInputComponent->BindAxis("MoveUp", this, &AKeepItAliveCharacter::MoveUp);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AKeepItAliveCharacter::MoveRight);
+	PlayerInputComponent->BindAction("BasicAttack", IE_Released, this, &AKeepItAliveCharacter::BasicAttack);
 
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AKeepItAliveCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &AKeepItAliveCharacter::TouchStopped);
@@ -118,8 +163,23 @@ void AKeepItAliveCharacter::MoveRight(float Value)
 {
 	/*UpdateChar();*/
 
+	if (Value == 0)
+	{
+		GetCharacterMovement()->Velocity.X = 0.f;
+	}
+
 	// Apply the input to the character motion
 	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
+}
+
+void AKeepItAliveCharacter::MoveUp(float Value)
+{
+	if (Value == 0)
+	{
+		GetCharacterMovement()->Velocity.Z = 0.f;
+	}
+
+	AddMovementInput(FVector(0.0f, 0.0f, 1.0f), Value);
 }
 
 void AKeepItAliveCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
@@ -136,12 +196,12 @@ void AKeepItAliveCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, co
 
 void AKeepItAliveCharacter::UpdateCharacter()
 {
-	// Update animation to match the motion
-	UpdateAnimation();
-
 	// Now setup the rotation of the controller based on the direction we are travelling
-	const FVector PlayerVelocity = GetVelocity();	
-	float TravelDirection = PlayerVelocity.X;
+	FVector WorldLocation, WorldDirection;
+
+	PlayerController->DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
+	float TravelDirection = WorldLocation.X - GetActorLocation().X;
+
 	// Set the rotation so that the character faces his direction of travel.
 	if (Controller != nullptr)
 	{
@@ -155,3 +215,38 @@ void AKeepItAliveCharacter::UpdateCharacter()
 		}
 	}
 }
+
+void AKeepItAliveCharacter::BasicAttack()
+{
+	bIsPlayerAttacking = true;
+}
+
+void AKeepItAliveCharacter::SpawnProjectile()
+{
+	FVector WorldLocation, WorldDirection;
+	PlayerController->DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
+	WorldLocation.Y = this->GetActorLocation().Y;
+	FVector TravelDirection = WorldLocation - ShootingOffset->GetComponentLocation();
+	ShootBasicAttackRotation = TravelDirection.GetSafeNormal().Rotation();
+
+	ABasicProjectile* Projectile = GetWorld()->SpawnActor<ABasicProjectile>(
+		BasicProjectileClass,
+		ShootingOffset->GetComponentLocation(),
+		ShootBasicAttackRotation
+		);
+
+	if (Projectile)
+	{
+		Projectile->FireInDirection(TravelDirection.GetSafeNormal());
+	}
+}
+
+void AKeepItAliveCharacter::SetDesiredAnimation(UPaperFlipbook* DesiredAnimation)
+{
+	if (GetSprite()->GetFlipbook() != DesiredAnimation)
+	{
+		GetSprite()->SetFlipbook(DesiredAnimation);
+	}
+}
+
+

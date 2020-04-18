@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\KeepItAlive.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FD69E860-0B76-4B65-852D-D1E2958C0EDE}</UniqueIdentifier>
+      <UniqueIdentifier>{9CB19823-5D90-4397-85CB-21C1B6D9B4C6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\KeepItAlive.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{740BE3C7-37E8-49B5-BE2F-4FC196CB103C}</UniqueIdentifier>
+      <UniqueIdentifier>{F0AB9397-35EC-4C66-9C8F-D9D64BCBE8C7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\KeepItAlive">
-      <UniqueIdentifier>{5640404B-80DA-48CD-B996-8895E2E27D5A}</UniqueIdentifier>
+      <UniqueIdentifier>{4D8CDC3D-7A9E-419E-85BD-970555C89B83}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\KeepItAlive\BasicProjectile.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeepItAlive\BasicProjectile.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
     <None Include="..\..\Source\KeepItAlive\KeepItAlive.Build.cs">
       <Filter>Source\KeepItAlive</Filter>
     </None>
@@ -53,5 +59,15 @@
     <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveGameMode.h">
       <Filter>Source\KeepItAlive</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseSpawnActor.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseSpawnActor.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

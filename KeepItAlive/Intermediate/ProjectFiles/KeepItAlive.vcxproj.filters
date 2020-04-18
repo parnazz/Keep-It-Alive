@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\KeepItAlive.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{FD69E860-0B76-4B65-852D-D1E2958C0EDE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KeepItAlive.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\KeepItAliveEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{740BE3C7-37E8-49B5-BE2F-4FC196CB103C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\KeepItAlive">
+      <UniqueIdentifier>{5640404B-80DA-48CD-B996-8895E2E27D5A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KeepItAlive\KeepItAlive.Build.cs">
+      <Filter>Source\KeepItAlive</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\KeepItAlive\KeepItAlive.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeepItAlive\KeepItAlive.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\KeepItAlive\KeepItAliveCharacter.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveCharacter.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\KeepItAlive\KeepItAliveGameMode.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveGameMode.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

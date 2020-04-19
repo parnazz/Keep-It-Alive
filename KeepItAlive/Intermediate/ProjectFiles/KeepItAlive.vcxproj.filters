@@ -64,9 +64,51 @@
     <ClInclude Include="..\..\Source\KeepItAlive\BaseSpawnActor.h">
       <Filter>Source\KeepItAlive</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseNPC.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseEnemy.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\DamageComponent.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveGameStateBase.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseWorker.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\EnemyStateMachine.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KeepItAlive\WorkerStateMachine.h">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\KeepItAlive\BaseSpawnActor.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseNPC.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseEnemy.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\DamageComponent.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\KeepItAliveGameStateBase.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseWorker.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\EnemyStateMachine.cpp">
+      <Filter>Source\KeepItAlive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KeepItAlive\WorkerStateMachine.cpp">
       <Filter>Source\KeepItAlive</Filter>
     </ClCompile>
   </ItemGroup>

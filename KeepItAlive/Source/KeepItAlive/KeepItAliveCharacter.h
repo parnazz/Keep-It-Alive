@@ -53,6 +53,9 @@ protected:
 	UPROPERTY()
 	class APlayerController* PlayerController;
 
+	UPROPERTY()
+	class AKeepItAliveGameMode* GameMode;
+
 	UPROPERTY(EditDefaultsOnly, Category = "Attacking")
 	TSubclassOf<ABasicProjectile> BasicProjectileClass;
 

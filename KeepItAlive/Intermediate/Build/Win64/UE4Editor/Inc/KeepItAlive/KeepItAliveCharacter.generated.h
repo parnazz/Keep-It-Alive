@@ -67,6 +67,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AKeepItAliveCharacter); \
 	FORCEINLINE static uint32 __PPO__IdleAnimation() { return STRUCT_OFFSET(AKeepItAliveCharacter, IdleAnimation); } \
 	FORCEINLINE static uint32 __PPO__AttackAnimation() { return STRUCT_OFFSET(AKeepItAliveCharacter, AttackAnimation); } \
 	FORCEINLINE static uint32 __PPO__PlayerController() { return STRUCT_OFFSET(AKeepItAliveCharacter, PlayerController); } \
+	FORCEINLINE static uint32 __PPO__GameMode() { return STRUCT_OFFSET(AKeepItAliveCharacter, GameMode); } \
 	FORCEINLINE static uint32 __PPO__BasicProjectileClass() { return STRUCT_OFFSET(AKeepItAliveCharacter, BasicProjectileClass); } \
 	FORCEINLINE static uint32 __PPO__ShootingOffset() { return STRUCT_OFFSET(AKeepItAliveCharacter, ShootingOffset); } \
 	FORCEINLINE static uint32 __PPO__ShootBasicAttackRotation() { return STRUCT_OFFSET(AKeepItAliveCharacter, ShootBasicAttackRotation); }

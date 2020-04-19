@@ -265,6 +265,14 @@
     <NMakeOutput>..\..\Binaries\Win64\KeepItAlive-Win64-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseWorker.cpp" />
+    <ClCompile Include="..\..\Source\KeepItAlive\EnemyStateMachine.cpp" />
+    <ClCompile Include="..\..\Source\KeepItAlive\KeepItAliveGameStateBase.cpp" />
+    <ClCompile Include="..\..\Source\KeepItAlive\WorkerStateMachine.cpp" />
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseWorker.h" />
+    <ClInclude Include="..\..\Source\KeepItAlive\EnemyStateMachine.h" />
+    <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveGameStateBase.h" />
+    <ClInclude Include="..\..\Source\KeepItAlive\WorkerStateMachine.h" />
     <None Include="..\..\KeepItAlive.uproject" />
     <None Include="..\..\Source\KeepItAlive.Target.cs" />
     <None Include="..\..\Source\KeepItAliveEditor.Target.cs" />
@@ -273,12 +281,18 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Config\DefaultInput.ini" />
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseEnemy.cpp" />
+    <ClCompile Include="..\..\Source\KeepItAlive\BaseNPC.cpp" />
     <ClCompile Include="..\..\Source\KeepItAlive\BaseSpawnActor.cpp" />
     <ClCompile Include="..\..\Source\KeepItAlive\BasicProjectile.cpp" />
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseEnemy.h" />
+    <ClInclude Include="..\..\Source\KeepItAlive\BaseNPC.h" />
     <ClInclude Include="..\..\Source\KeepItAlive\BaseSpawnActor.h" />
     <ClInclude Include="..\..\Source\KeepItAlive\BasicProjectile.h" />
     <None Include="..\..\Source\KeepItAlive\KeepItAlive.Build.cs" />
+    <ClCompile Include="..\..\Source\KeepItAlive\DamageComponent.cpp" />
     <ClCompile Include="..\..\Source\KeepItAlive\KeepItAlive.cpp" />
+    <ClInclude Include="..\..\Source\KeepItAlive\DamageComponent.h" />
     <ClInclude Include="..\..\Source\KeepItAlive\KeepItAlive.h" />
     <ClCompile Include="..\..\Source\KeepItAlive\KeepItAliveCharacter.cpp" />
     <ClInclude Include="..\..\Source\KeepItAlive\KeepItAliveCharacter.h" />

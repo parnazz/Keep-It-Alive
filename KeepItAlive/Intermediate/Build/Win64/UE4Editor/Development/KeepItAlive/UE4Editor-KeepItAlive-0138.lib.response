@@ -1,0 +1,28 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-KeepItAlive-0138.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseEnemy.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseNPC.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseSpawnActor.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BasicProjectile.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\DamageComponent.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAlive.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveCharacter.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveGameMode.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseEnemy.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseNPC.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BaseSpawnActor.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\BasicProjectile.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\DamageComponent.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAlive.init.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveCharacter.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveGameMode.gen.cpp.obj"
+"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Default.rc2.res"
+/OUT:"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\UE4Editor-KeepItAlive-0138.lib"
+/INCLUDE:IMPLEMENT_MODULE_KeepItAlive

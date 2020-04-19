@@ -10,8 +10,10 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/PlayerController.h"
+#include "GameFramework/GameMode.h"
 #include "Camera/CameraComponent.h"
 #include "DrawDebugHelpers.h"
+#include "KeepItAliveGameMode.h"
 
 DEFINE_LOG_CATEGORY_STATIC(SideScrollerCharacter, Log, All);
 
@@ -129,6 +131,11 @@ void AKeepItAliveCharacter::Tick(float DeltaSeconds)
 	UpdateAnimation(DeltaSeconds);
 
 	UpdateCharacter();
+
+	if (PlayerController->WasInputKeyJustPressed(EKeys::T) && GameMode)
+	{
+		GameMode->SetCurrentState(EInGameState::EWaveSpawn);
+	}
 }
 
 void AKeepItAliveCharacter::BeginPlay()
@@ -136,6 +143,7 @@ void AKeepItAliveCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	PlayerController = Cast<APlayerController>(GetController());
+	GameMode = Cast<AKeepItAliveGameMode>(GetWorld()->GetAuthGameMode());
 
 	if (PlayerController)
 	{
@@ -148,9 +156,6 @@ void AKeepItAliveCharacter::BeginPlay()
 
 void AKeepItAliveCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	// Note: the 'Jump' action and the 'MoveRight' axis are bound to actual keys/buttons/sticks in DefaultInput.ini (editable from Project Settings..Input)
-	/*PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);*/
 	PlayerInputComponent->BindAxis("MoveUp", this, &AKeepItAliveCharacter::MoveUp);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AKeepItAliveCharacter::MoveRight);
 	PlayerInputComponent->BindAction("BasicAttack", IE_Released, this, &AKeepItAliveCharacter::BasicAttack);
@@ -161,14 +166,11 @@ void AKeepItAliveCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 
 void AKeepItAliveCharacter::MoveRight(float Value)
 {
-	/*UpdateChar();*/
-
 	if (Value == 0)
 	{
 		GetCharacterMovement()->Velocity.X = 0.f;
 	}
 
-	// Apply the input to the character motion
 	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
 }
 
@@ -184,25 +186,20 @@ void AKeepItAliveCharacter::MoveUp(float Value)
 
 void AKeepItAliveCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	// Jump on any touch
 	Jump();
 }
 
 void AKeepItAliveCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	// Cease jumping once touch stopped
 	StopJumping();
 }
 
 void AKeepItAliveCharacter::UpdateCharacter()
 {
-	// Now setup the rotation of the controller based on the direction we are travelling
 	FVector WorldLocation, WorldDirection;
-
 	PlayerController->DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
 	float TravelDirection = WorldLocation.X - GetActorLocation().X;
 
-	// Set the rotation so that the character faces his direction of travel.
 	if (Controller != nullptr)
 	{
 		if (TravelDirection < 0.0f)

@@ -39,6 +39,14 @@ C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Paw
 C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
 C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
 C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameMode.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameMode.generated.h
 C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameMode.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameMode.generated.h

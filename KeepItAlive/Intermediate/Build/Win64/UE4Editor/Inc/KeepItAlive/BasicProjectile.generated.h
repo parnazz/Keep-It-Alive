@@ -123,7 +123,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABasicProjectile); \
 #define KeepItAlive_Source_KeepItAlive_BasicProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CapsuleComponent() { return STRUCT_OFFSET(ABasicProjectile, CapsuleComponent); } \
 	FORCEINLINE static uint32 __PPO__PaperSpriteComponent() { return STRUCT_OFFSET(ABasicProjectile, PaperSpriteComponent); } \
-	FORCEINLINE static uint32 __PPO__ProjectileMovementComponent() { return STRUCT_OFFSET(ABasicProjectile, ProjectileMovementComponent); }
+	FORCEINLINE static uint32 __PPO__ProjectileMovementComponent() { return STRUCT_OFFSET(ABasicProjectile, ProjectileMovementComponent); } \
+	FORCEINLINE static uint32 __PPO__ProjectileDamage() { return STRUCT_OFFSET(ABasicProjectile, ProjectileDamage); }
 
 
 #define KeepItAlive_Source_KeepItAlive_BasicProjectile_h_12_PROLOG

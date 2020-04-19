@@ -10,4 +10,6 @@ C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootM
 C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperCharacter.generated.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\BaseNPC.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseNPC.generated.h
 C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseSpawnActor.generated.h

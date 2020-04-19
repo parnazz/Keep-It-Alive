@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeKeepItAliveCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	KEEPITALIVE_API UClass* Z_Construct_UClass_ABasicProjectile_NoRegister();
+	KEEPITALIVE_API UClass* Z_Construct_UClass_AKeepItAliveGameMode_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -51,6 +52,10 @@ void EmptyLinkFunctionForGeneratedCodeKeepItAliveCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BasicProjectileClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BasicProjectileClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameMode_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameMode;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerController_MetaData[];
 #endif
@@ -123,6 +128,12 @@ void EmptyLinkFunctionForGeneratedCodeKeepItAliveCharacter() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_BasicProjectileClass = { "BasicProjectileClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AKeepItAliveCharacter, BasicProjectileClass), Z_Construct_UClass_ABasicProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_BasicProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_BasicProjectileClass_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_GameMode_MetaData[] = {
+		{ "ModuleRelativePath", "KeepItAliveCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_GameMode = { "GameMode", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AKeepItAliveCharacter, GameMode), Z_Construct_UClass_AKeepItAliveGameMode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_GameMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_GameMode_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_PlayerController_MetaData[] = {
 		{ "ModuleRelativePath", "KeepItAliveCharacter.h" },
 	};
@@ -189,6 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeKeepItAliveCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_ShootBasicAttackRotation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_ShootingOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_BasicProjectileClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_GameMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_PlayerController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_AttackAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeepItAliveCharacter_Statics::NewProp_IdleAnimation,
@@ -225,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeKeepItAliveCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AKeepItAliveCharacter, 598495957);
+	IMPLEMENT_CLASS(AKeepItAliveCharacter, 2564342768);
 	template<> KEEPITALIVE_API UClass* StaticClass<AKeepItAliveCharacter>()
 	{
 		return AKeepItAliveCharacter::StaticClass();

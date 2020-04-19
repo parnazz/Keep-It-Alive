@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameStateBase.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
+C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameStateBase.generated.h

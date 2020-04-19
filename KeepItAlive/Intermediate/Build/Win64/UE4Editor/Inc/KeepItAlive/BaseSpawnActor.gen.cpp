@@ -15,10 +15,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseSpawnActor() {}
 // Cross Module References
 	KEEPITALIVE_API UScriptStruct* Z_Construct_UScriptStruct_FSpawnableCharacter();
 	UPackage* Z_Construct_UPackage__Script_KeepItAlive();
-	PAPER2D_API UClass* Z_Construct_UClass_APaperCharacter_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	KEEPITALIVE_API UClass* Z_Construct_UClass_ABaseNPC_NoRegister();
 	KEEPITALIVE_API UClass* Z_Construct_UClass_ABaseSpawnActor_NoRegister();
 	KEEPITALIVE_API UClass* Z_Construct_UClass_ABaseSpawnActor();
 	PAPER2D_API UClass* Z_Construct_UClass_APaperSpriteActor();
+	KEEPITALIVE_API UClass* Z_Construct_UClass_AKeepItAliveGameStateBase_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
 class UScriptStruct* FSpawnableCharacter::StaticStruct()
 {
@@ -57,9 +60,9 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TimeToSpawn;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterToSpawn_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterToSpawnClass_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CharacterToSpawn;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_CharacterToSpawnClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -87,15 +90,16 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_TimeToSpawn = { "TimeToSpawn", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnableCharacter, TimeToSpawn), METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_TimeToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_TimeToSpawn_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawn_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawnClass_MetaData[] = {
+		{ "Category", "SpawnableCharacter" },
 		{ "ModuleRelativePath", "BaseSpawnActor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawn = { "CharacterToSpawn", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnableCharacter, CharacterToSpawn), Z_Construct_UClass_APaperCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawn_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawnClass = { "CharacterToSpawnClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnableCharacter, CharacterToSpawnClass), Z_Construct_UClass_ABaseNPC_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawnClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawnClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_LaneNumber,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_TimeToSpawn,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::NewProp_CharacterToSpawnClass,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSpawnableCharacter_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_KeepItAlive,
@@ -125,7 +129,7 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSpawnableCharacter_Hash() { return 2663710212U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSpawnableCharacter_Hash() { return 3022611576U; }
 	void ABaseSpawnActor::StaticRegisterNativesABaseSpawnActor()
 	{
 	}
@@ -139,6 +143,20 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OriginPoolForCharacters_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OriginPoolForCharacters;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WaveToSpawn_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_WaveToSpawn;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_WaveToSpawn_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -153,6 +171,34 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 		{ "ModuleRelativePath", "BaseSpawnActor.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_GameState_MetaData[] = {
+		{ "ModuleRelativePath", "BaseSpawnActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_GameState = { "GameState", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseSpawnActor, GameState), Z_Construct_UClass_AKeepItAliveGameStateBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_GameState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_GameState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_OriginPoolForCharacters_MetaData[] = {
+		{ "Category", "BaseSpawnActor" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseSpawnActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_OriginPoolForCharacters = { "OriginPoolForCharacters", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseSpawnActor, OriginPoolForCharacters), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_OriginPoolForCharacters_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_OriginPoolForCharacters_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn_MetaData[] = {
+		{ "Category", "Spawn Properties" },
+		{ "ModuleRelativePath", "BaseSpawnActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn = { "WaveToSpawn", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseSpawnActor, WaveToSpawn), METADATA_PARAMS(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn_Inner = { "WaveToSpawn", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSpawnableCharacter, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseSpawnActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_GameState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_OriginPoolForCharacters,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseSpawnActor_Statics::NewProp_WaveToSpawn_Inner,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseSpawnActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseSpawnActor>::IsAbstract,
 	};
@@ -162,11 +208,11 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ABaseSpawnActor_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ABaseSpawnActor_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ABaseSpawnActor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseSpawnActor_Statics::Class_MetaDataParams))
@@ -180,7 +226,7 @@ static struct FScriptStruct_KeepItAlive_StaticRegisterNativesFSpawnableCharacter
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseSpawnActor, 2660599606);
+	IMPLEMENT_CLASS(ABaseSpawnActor, 1826368429);
 	template<> KEEPITALIVE_API UClass* StaticClass<ABaseSpawnActor>()
 	{
 		return ABaseSpawnActor::StaticClass();

@@ -1,4 +1,4 @@
-﻿Log file open, 04/19/20 20:16:25
+﻿Log file open, 04/20/20 08:53:54
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: KeepItAlive
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.089576
+LogStats: Stats thread started at 0.071459
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +3:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -163,1386 +163,353 @@ LogInit: Presizing for max 25165824 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:244][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2020.04.19-17.16.26:244][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2020.04.19-17.16.26:245][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:245][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:249][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.19-17.16.26:249][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.19-17.16.26:250][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.19-17.16.26:250][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.19-17.16.26:250][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.04.19-17.16.26:254][  0]LogHAL: Display: Platform has ~ 8 GB [8554160128 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.04.19-17.16.26:254][  0]LogInit: Going up to parent DeviceProfile []
-[2020.04.19-17.16.26:254][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.19-17.16.26:254][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.19-17.16.26:255][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
-[2020.04.19-17.16.26:256][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2020.04.19-17.16.26:256][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2020.04.19-17.16.26:256][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
-[2020.04.19-17.16.26:256][  0]LogInit: Computer: WIN-H8OU5S8TNS7
-[2020.04.19-17.16.26:256][  0]LogInit: User: Admin
-[2020.04.19-17.16.26:256][  0]LogInit: CPU Page size=4096, Cores=4
-[2020.04.19-17.16.26:256][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.04.19-17.16.26:256][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2020.04.19-17.16.26:256][  0]LogMemory: Platform Memory Stats for Windows
-[2020.04.19-17.16.26:256][  0]LogMemory: Process Physical Memory: 105.14 MB used, 105.15 MB peak
-[2020.04.19-17.16.26:256][  0]LogMemory: Process Virtual Memory: 99.81 MB used, 99.81 MB peak
-[2020.04.19-17.16.26:256][  0]LogMemory: Physical Memory: 5470.53 MB used,  2687.36 MB free, 8157.88 MB total
-[2020.04.19-17.16.26:257][  0]LogMemory: Virtual Memory: 5121.08 MB used,  134212608.00 MB free, 134217728.00 MB total
-[2020.04.19-17.16.26:259][  0]LogWindows: WindowsPlatformFeatures enabled
-[2020.04.19-17.16.26:292][  0]LogInit: Using OS detected language (ru-RU).
-[2020.04.19-17.16.26:292][  0]LogInit: Using OS detected locale (ru-RU).
-[2020.04.19-17.16.26:292][  0]LogTextLocalizationManager: No specific localization for 'ru-RU' exists, so the 'ru' localization will be used.
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/ru/Editor.locres' could not be opened for reading!
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/ru/EditorTutorials.locres' could not be opened for reading!
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/ru/Keywords.locres' could not be opened for reading!
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/ru/Category.locres' could not be opened for reading!
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/ru/ToolTips.locres' could not be opened for reading!
-[2020.04.19-17.16.26:293][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/ru/PropertyNames.locres' could not be opened for reading!
-[2020.04.19-17.16.26:294][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/ru/Engine.locres' could not be opened for reading!
-[2020.04.19-17.16.26:296][  0]LogInit: Setting process to per monitor DPI aware
-[2020.04.19-17.16.26:333][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.04.19-17.16.26:333][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.04.19-17.16.26:648][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.19-17.16.26:648][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2020.04.19-17.16.26:648][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2020.04.19-17.16.26:648][  0]LogD3D11RHI: D3D11 adapters:
-[2020.04.19-17.16.26:691][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
-[2020.04.19-17.16.26:691][  0]LogD3D11RHI:       6081/0/4078 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2020.04.19-17.16.26:701][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.04.19-17.16.26:701][  0]LogD3D11RHI:       0/0/4078 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.04.19-17.16.26:701][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.04.19-17.16.26:708][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.04.19-17.16.26:708][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
-[2020.04.19-17.16.26:708][  0]LogWindows: EnumDisplayDevices:
-[2020.04.19-17.16.26:708][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
-[2020.04.19-17.16.26:709][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2020.04.19-17.16.26:709][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2020.04.19-17.16.26:710][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2020.04.19-17.16.26:710][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2020.04.19-17.16.26:710][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
-[2020.04.19-17.16.26:710][  0]LogD3D11RHI:   Driver Version: 378.66 (internal:21.21.13.7866, unified:378.66)
-[2020.04.19-17.16.26:710][  0]LogD3D11RHI:      Driver Date: 2-9-2017
-[2020.04.19-17.16.26:710][  0]LogRHI: Texture pool is 4256 MB (70% of 6081 MB)
-[2020.04.19-17.16.26:733][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
-[2020.04.19-17.16.26:733][  0]LogD3D11RHI: Async texture creation enabled
-[2020.04.19-17.16.26:748][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2020.04.19-17.16.27:055][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2020.04.19-17.16.27:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2020.04.19-17.16.27:118][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2020.04.19-17.16.27:118][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2020.04.19-17.16.27:127][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2020.04.19-17.16.27:137][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2020.04.19-17.16.27:146][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2020.04.19-17.16.27:155][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2020.04.19-17.16.27:164][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2020.04.19-17.16.27:173][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2020.04.19-17.16.27:205][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2020.04.19-17.16.27:205][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2020.04.19-17.16.27:223][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2020.04.19-17.16.27:223][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2020.04.19-17.16.27:232][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2020.04.19-17.16.27:241][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2020.04.19-17.16.27:250][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2020.04.19-17.16.27:259][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2020.04.19-17.16.27:259][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.04.19-17.16.27:262][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2020.04.19-17.16.27:295][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Intermediate/Shaders/WorkingDirectory/19796/).
-[2020.04.19-17.16.27:296][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/A6E9F557424672A9F8E73E9C1625BFB7/'.
-[2020.04.19-17.16.27:296][  0]LogXGEController: Cleaning working directory: C:/Users/Admin/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2020.04.19-17.16.27:297][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
-[2020.04.19-17.16.28:301][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.04.19-17.16.28:650][  0]LogDerivedDataCache: Loaded boot cache 0.35s 78MB C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.19-17.16.28:651][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
-[2020.04.19-17.16.28:651][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.04.19-17.16.28:651][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.04.19-17.16.28:651][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.19-17.16.28:651][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.04.19-17.16.28:664][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.04.19-17.16.28:664][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.19-17.16.28:664][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2020.04.19-17.16.28:665][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.04.19-17.16.28:665][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.04.19-17.16.28:665][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.04.19-17.16.28:698][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.04.19-17.16.28:701][  0]LogSlate: Using FreeType 2.10.0
-[2020.04.19-17.16.28:701][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.04.19-17.16.28:772][  0]LogAssetRegistry: FAssetRegistry took 0.0027 seconds to start up
-[2020.04.19-17.16.29:160][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.19-17.16.29:356][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.04.19-17.16.29:356][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2020.04.19-17.16.29:356][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.04.19-17.16.29:356][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2020.04.19-17.16.29:356][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2020.04.19-17.16.29:372][  0]LogNetVersion: KeepItAlive 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 3291726500)
-[2020.04.19-17.16.31:326][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.032121 seconds
-[2020.04.19-17.16.31:334][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
-[2020.04.19-17.16.31:334][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
-[2020.04.19-17.16.31:334][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.04.19-17.16.31:870][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.04.19-17.16.31:875][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2020.04.19-17.16.31:965][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.31:965][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.31:969][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.31:970][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.31:972][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.32:103][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.04.19-17.16.32:118][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.19-17.16.32:118][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.19-17.16.32:227][  0]LogOcInput: OculusInput pre-init called
-[2020.04.19-17.16.32:236][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2020.04.19-17.16.32:236][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2020.04.19-17.16.32:321][  0]LogEngine: Initializing Engine...
-[2020.04.19-17.16.32:322][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.19-17.16.32:323][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2020.04.19-17.16.32:717][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.04.19-17.16.32:726][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.16.32:827][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.16.32:827][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.16.32:828][  0]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.16.32:828][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.16.32:863][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.16.32:864][  0]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.16.32:923][  0]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.16.32:928][  0]LogInit: FAudioDevice initialized.
-[2020.04.19-17.16.32:928][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.04.19-17.16.33:036][  0]LogDerivedDataCache: Saved boot cache 0.11s 78MB C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.19-17.16.33:038][  0]LogInit: Texture streaming: Enabled
-[2020.04.19-17.16.33:048][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.04.19-17.16.33:048][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={050F279F-4F1F-FB29-9FBB-219CD8C9BD23}
-[2020.04.19-17.16.33:048][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2020.04.19-17.16.33:049][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2020.04.19-17.16.33:094][  0]LogInit: Transaction tracking system initialized
-[2020.04.19-17.16.33:115][  0]BlueprintLog: New page: Editor Load
-[2020.04.19-17.16.33:160][  0]LocalizationService: Localization service is disabled
-[2020.04.19-17.16.33:477][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/' took 0.00s
-[2020.04.19-17.16.33:477][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.04.19-17.16.33:477][  0]LogCook: Display: Mobile HDR setting 1
-[2020.04.19-17.16.34:216][  0]SourceControl: Source control is disabled
-[2020.04.19-17.16.34:216][  0]Cmd: MAP LOAD FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/2DSideScrollerCPP/Maps/2DSideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.04.19-17.16.34:216][  0]LogEditorServer: Warning: Can't find file '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/2DSideScrollerCPP/Maps/2DSideScrollerExampleMap.umap'
-[2020.04.19-17.16.34:216][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.04.19-17.16.34:216][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,149ms to complete.
-[2020.04.19-17.16.34:216][  0]LogFileHelpers: Loading map '2DSideScrollerExampleMap' took 0.001
-[2020.04.19-17.16.34:361][  0]LogCollectionManager: Loaded 0 collections in 0.001900 seconds
-[2020.04.19-17.16.34:378][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Collections/' took 0.00s
-[2020.04.19-17.16.34:378][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Developers/Admin/Collections/' took 0.00s
-[2020.04.19-17.16.34:378][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Collections/' took 0.00s
-[2020.04.19-17.16.34:378][  0]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 3032 classes and 719 folders.
-[2020.04.19-17.16.34:382][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.04.19-17.16.34:539][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.04.19-17.16.34:615][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.16.34:624][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.16.34:633][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.16.34:642][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.16.34:648][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 3 folders.
-[2020.04.19-17.16.34:689][  0]LogSlate: Took 0.000115 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.04.19-17.16.34:693][  0]LogSlate: Took 0.001024 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.04.19-17.16.34:694][  0]LogSlate: Took 0.000101 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.04.19-17.16.34:701][  0]LogSlate: Took 0.000891 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2020.04.19-17.16.34:758][  0]LogSlate: Took 0.001377 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.19-17.16.34:839][  0]LogRenderer: Reallocating scene render targets to support 972x332 Format 10 NumSamples 1 (Frame:1).
-[2020.04.19-17.16.34:991][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2020.04.19-17.16.34:991][  0]LogLoad: (Engine Initialization) Total time: 11.21 seconds
-[2020.04.19-17.16.34:991][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.04.19-17.16.35:049][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.04.19-17.16.35:155][  2]LogAssetRegistry: Asset discovery search completed in 6.3837 seconds
-[2020.04.19-17.16.35:160][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000008 seconds (updated 0 objects)
-[2020.04.19-17.16.38:955][445]LogSlate: Took 0.000148 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.19-17.16.39:170][445]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.16.39:173][445]LogAssetEditorSubsystem: Opening Asset editor for World /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel
-[2020.04.19-17.16.39:198][445]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
-[2020.04.19-17.16.39:202][445]Cmd: MAP LOAD FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/2DSideScrollerCPP/Maps/MainLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.04.19-17.16.39:204][445]LightingResults: New page: Lighting Build
-[2020.04.19-17.16.39:207][445]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0008 seconds. Added 5 classes and 0 folders.
-[2020.04.19-17.16.39:208][445]LoadErrors: New page: Loading map: MainLevel.umap
-[2020.04.19-17.16.39:208][445]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.16.39:209][445]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.16.39:209][445]MapCheck: New page: Map Check
-[2020.04.19-17.16.39:209][445]LightingResults: New page: Lighting Build
-[2020.04.19-17.16.39:236][445]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
-[2020.04.19-17.16.39:327][445]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.04.19-17.16.39:353][445]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
-[2020.04.19-17.16.39:376][445]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.04.19-17.16.39:377][445]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,125ms to complete.
-[2020.04.19-17.16.39:377][445]LogFileHelpers: Loading map 'MainLevel' took 0.175
-[2020.04.19-17.16.40:761][604]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.16.40:773][604]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.16.40:774][604]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.16.40:774][604]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:16:40)
-[2020.04.19-17.16.40:775][604]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2020.04.19-17.16.40:776][604]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-[2020.04.19-17.16.40:776][604]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.16.40:780][604]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003862s)
-[2020.04.19-17.16.40:781][604]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.16.40:782][604]LogPlayLevel: PIE: World Init took: (0.001768s)
-[2020.04.19-17.16.40:782][604]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005920s)
-[2020.04.19-17.16.40:808][604]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.16.40:809][604]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.16.40:809][604]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.16.40:810][604]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.16.40:810][604]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.16.40:835][604]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.16.40:855][604]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.16.40:857][604]LogInit: FAudioDevice initialized.
-[2020.04.19-17.16.40:864][604]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.16.40:866][604]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.16.40
-[2020.04.19-17.16.40:867][604]LogWorld: Bringing up level for play took: 0.001695
-[2020.04.19-17.16.40:867][604]LogOnline: OSS: Creating online subsystem instance for: :Context_1
-[2020.04.19-17.16.40:871][604]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
-[2020.04.19-17.16.40:872][604]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,393
-[2020.04.19-17.16.40:872][604]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.16.40:873][604]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.16.41:266][649]LogTemp: Warning: Time has come
-[2020.04.19-17.16.50:768][789]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.16.51:776][910]LogTemp: Warning: Time has come
-[2020.04.19-17.27.06:558][647]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.27.06:558][647]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.27.06:559][647]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.27.06:567][647]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.27.06:567][647]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.27.06:568][647]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.27.06:572][647]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.27.06:577][647]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.27.06:586][647]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.27.06:587][647]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.27.06:591][647]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.27.06:619][647]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.27.06:628][647]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.27.06:643][647]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
-[2020.04.19-17.27.06:676][649]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2020.04.19-17.29.28:623][277]LogHotReload: New module detected: UE4Editor-KeepItAlive-0001.dll
-[2020.04.19-17.29.30:301][283]LogHotReload: Starting Hot-Reload from IDE
-[2020.04.19-17.29.30:359][283]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
-[2020.04.19-17.29.30:363][283]LogClass: Could not find existing class BaseEnemy in package /Script/KeepItAlive for HotReload, assuming new class
-[2020.04.19-17.29.30:365][283]LogClass: Function GetIsFoundWorker is new.
-[2020.04.19-17.29.30:365][283]LogClass: Function OnEnemyOverlapBegin is new.
-[2020.04.19-17.29.30:365][283]LogClass: Function SetIsFoundWorker is new.
-[2020.04.19-17.29.30:366][283]LogClass: Could not find existing class BaseWorker in package /Script/KeepItAlive for HotReload, assuming new class
-[2020.04.19-17.29.30:381][283]LogClass: EInGameState HotReload.
-[2020.04.19-17.29.30:381][283]LogClass: SpawnableCharacter HotReload.
-[2020.04.19-17.29.30:386][283]LogHotReload: Re-instancing BaseEnemy after hot-reload.
-[2020.04.19-17.29.30:563][283]LogHotReload: Re-instancing BaseWorker after hot-reload.
-[2020.04.19-17.29.30:702][283]LogContentBrowser: Native class hierarchy updated for 'KeepItAlive' in 0.0005 seconds. Added 17 classes and 2 folders.
-[2020.04.19-17.29.30:706][283]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
-[2020.04.19-17.29.30:787][283]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
-[2020.04.19-17.29.30:798][283]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 3034 classes and 722 folders.
-[2020.04.19-17.29.30:816][283]Display: HotReload took  0.5s.
-[2020.04.19-17.29.39:254][584]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.29.39:269][584]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.29.39:270][584]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.29.39:270][584]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:29:39)
-[2020.04.19-17.29.39:270][584]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.29.39:274][584]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003879s)
-[2020.04.19-17.29.39:275][584]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.29.39:275][584]LogPlayLevel: PIE: World Init took: (0.001216s)
-[2020.04.19-17.29.39:275][584]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005252s)
-[2020.04.19-17.29.39:301][584]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.29.39:302][584]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.29.39:302][584]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.29.39:303][584]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.29.39:303][584]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.29.39:331][584]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.29.39:351][584]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.29.39:353][584]LogInit: FAudioDevice initialized.
-[2020.04.19-17.29.39:362][584]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.29.39:364][584]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.29.39
-[2020.04.19-17.29.39:365][584]LogWorld: Bringing up level for play took: 0.001716
-[2020.04.19-17.29.39:365][584]LogOnline: OSS: Creating online subsystem instance for: :Context_2
-[2020.04.19-17.29.39:367][584]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,103
-[2020.04.19-17.29.39:368][584]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.29.39:368][584]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.29.39:758][629]LogTemp: Warning: Time has come
-[2020.04.19-17.29.49:258][765]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.29.50:267][886]LogTemp: Warning: Time has come
-[2020.04.19-17.31.39:920][ 31]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.31.41:979][278]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.31.43:511][462]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.31.44:471][577]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.31.45:462][696]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.31.46:554][827]LogTemp: Warning: Enemies left: 1
-[2020.04.19-17.31.47:413][930]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.31.48:505][ 61]LogTemp: Warning: Enemies left: 0
-[2020.04.19-17.31.48:513][ 62]LogTemp: Warning: All Enemies defeated
-[2020.04.19-17.31.48:513][ 62]LogTemp: Warning: You won!
-[2020.04.19-17.31.49:158][139]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.31.49:158][139]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.31.49:158][139]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.31.49:158][139]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.31.49:159][139]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.31.49:159][139]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.31.49:159][139]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.31.49:159][139]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.31.49:168][139]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.31.49:168][139]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.31.49:172][139]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.31.49:197][139]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.31.49:202][139]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.31.49:206][139]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
-[2020.04.19-17.31.49:260][144]LogPlayLevel: Display: Destroying online subsystem :Context_2
-[2020.04.19-17.33.17:726][595]LogHotReload: New module detected: UE4Editor-KeepItAlive-0002.dll
-[2020.04.19-17.33.19:076][600]LogHotReload: Starting Hot-Reload from IDE
-[2020.04.19-17.33.19:125][600]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
-[2020.04.19-17.33.19:148][600]LogClass: EInGameState HotReload.
-[2020.04.19-17.33.19:148][600]LogClass: SpawnableCharacter HotReload.
-[2020.04.19-17.33.19:165][600]LogContentBrowser: Native class hierarchy updated for 'KeepItAlive' in 0.0005 seconds. Added 17 classes and 2 folders.
-[2020.04.19-17.33.19:167][600]Display: HotReload successful (8 functions remapped  1 scriptstructs remapped)
-[2020.04.19-17.33.19:247][600]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
-[2020.04.19-17.33.19:258][600]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 3034 classes and 722 folders.
-[2020.04.19-17.33.19:267][600]Display: HotReload took  0.2s.
-[2020.04.19-17.33.21:930][707]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.33.21:946][707]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.33.21:946][707]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.33.21:946][707]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:33:21)
-[2020.04.19-17.33.21:946][707]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.33.21:950][707]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003953s)
-[2020.04.19-17.33.21:951][707]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.33.21:951][707]LogPlayLevel: PIE: World Init took: (0.001365s)
-[2020.04.19-17.33.21:952][707]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005482s)
-[2020.04.19-17.33.21:975][707]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.33.21:975][707]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.33.21:975][707]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.33.21:976][707]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.33.21:976][707]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.33.22:001][707]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.33.22:023][707]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.33.22:028][707]LogInit: FAudioDevice initialized.
-[2020.04.19-17.33.22:041][707]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.33.22:044][707]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.33.22
-[2020.04.19-17.33.22:045][707]LogWorld: Bringing up level for play took: 0.002392
-[2020.04.19-17.33.22:045][707]LogOnline: OSS: Creating online subsystem instance for: :Context_3
-[2020.04.19-17.33.22:049][707]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,785
-[2020.04.19-17.33.22:050][707]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.33.22:050][707]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.33.22:432][752]LogTemp: Warning: Time has come
-[2020.04.19-17.33.31:934][892]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.33.32:943][ 13]LogTemp: Warning: Time has come
-[2020.04.19-17.33.33:134][ 36]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.33.33:872][122]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.33.34:531][201]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.33.35:624][332]LogTemp: Warning: Enemies left: 1
-[2020.04.19-17.33.39:994][856]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.33.41:711][ 62]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.33.43:163][236]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.33.44:255][367]LogTemp: Warning: Enemies left: 0
-[2020.04.19-17.33.44:263][368]LogTemp: Warning: All Enemies defeated
-[2020.04.19-17.33.44:263][368]LogTemp: Warning: You won!
-[2020.04.19-17.33.44:347][378]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.33.44:347][378]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.33.44:347][378]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.33.44:348][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.33.44:348][378]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.33.44:348][378]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.33.44:348][378]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.33.44:348][378]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.33.44:358][378]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.33.44:358][378]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.33.44:361][378]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.33.44:386][378]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.33.44:391][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.33.44:395][378]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
-[2020.04.19-17.33.44:447][382]LogPlayLevel: Display: Destroying online subsystem :Context_3
-[2020.04.19-17.34.05:352][543]LogHotReload: New module detected: UE4Editor-KeepItAlive-0003.dll
-[2020.04.19-17.34.06:387][547]LogHotReload: Starting Hot-Reload from IDE
-[2020.04.19-17.34.06:438][547]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
-[2020.04.19-17.34.06:467][547]LogClass: EInGameState HotReload.
-[2020.04.19-17.34.06:467][547]LogClass: SpawnableCharacter HotReload.
-[2020.04.19-17.34.06:483][547]LogContentBrowser: Native class hierarchy updated for 'KeepItAlive' in 0.0006 seconds. Added 17 classes and 2 folders.
-[2020.04.19-17.34.06:486][547]Display: HotReload successful (8 functions remapped  1 scriptstructs remapped)
-[2020.04.19-17.34.06:564][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
-[2020.04.19-17.34.06:575][547]LogContentBrowser: Native class hierarchy populated in 0.0109 seconds. Added 3034 classes and 722 folders.
-[2020.04.19-17.34.06:583][547]Display: HotReload took  0.2s.
-[2020.04.19-17.34.09:947][739]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.34.09:963][739]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.09:963][739]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.34.09:963][739]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:34:09)
-[2020.04.19-17.34.09:963][739]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.34.09:967][739]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003416s)
-[2020.04.19-17.34.09:968][739]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.34.09:968][739]LogPlayLevel: PIE: World Init took: (0.001098s)
-[2020.04.19-17.34.09:968][739]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005016s)
-[2020.04.19-17.34.09:995][739]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
-[2020.04.19-17.34.09:995][739]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.34.09:995][739]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.34.09:995][739]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.34.09:996][739]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.34.09:996][739]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.34.09:996][739]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.34.09:996][739]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.34.09:996][739]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.34.09:996][739]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.34.09:996][739]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.34.10:021][739]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.34.10:021][739]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.34.10:021][739]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.34.10:021][739]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.34.10:022][739]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.34.10:022][739]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.34.10:022][739]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.34.10:022][739]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.34.10:022][739]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.34.10:047][739]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.34.10:052][739]LogInit: FAudioDevice initialized.
-[2020.04.19-17.34.10:064][739]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.34.10:066][739]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.34.10
-[2020.04.19-17.34.10:066][739]LogWorld: Bringing up level for play took: 0.001401
-[2020.04.19-17.34.10:066][739]LogOnline: OSS: Creating online subsystem instance for: :Context_4
-[2020.04.19-17.34.10:069][739]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,803
-[2020.04.19-17.34.10:069][739]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.10:069][739]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.34.10:450][784]LogTemp: Warning: Time has come
-[2020.04.19-17.34.19:952][924]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.34.20:968][ 44]LogTemp: Warning: Time has come
-[2020.04.19-17.34.21:026][ 51]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.34.21:698][131]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.34.22:375][212]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.34.23:267][319]LogTemp: Warning: Current Health: -10.000000
-[2020.04.19-17.34.23:466][343]LogTemp: Warning: Enemies left: 1
-[2020.04.19-17.34.24:017][409]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.34.24:766][499]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.34.25:833][627]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.34.26:930][756]LogTemp: Warning: Enemies left: 0
-[2020.04.19-17.34.26:938][757]LogTemp: Warning: All Enemies defeated
-[2020.04.19-17.34.26:938][757]LogTemp: Warning: You won!
-[2020.04.19-17.34.28:099][895]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.28:099][895]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.28:099][895]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.28:099][895]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.34.28:099][895]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.34.28:099][895]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.28:100][895]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.34.28:100][895]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.34.28:109][895]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.34.28:110][895]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.28:112][895]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.34.28:138][895]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.28:141][895]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.34.28:144][895]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
-[2020.04.19-17.34.28:200][900]LogPlayLevel: Display: Destroying online subsystem :Context_4
-[2020.04.19-17.34.28:952][989]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.34.28:965][989]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.28:965][989]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.34.28:965][989]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:34:28)
-[2020.04.19-17.34.28:965][989]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.34.28:969][989]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003735s)
-[2020.04.19-17.34.28:970][989]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.34.28:970][989]LogPlayLevel: PIE: World Init took: (0.001148s)
-[2020.04.19-17.34.28:970][989]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005033s)
-[2020.04.19-17.34.28:996][989]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.34.28:997][989]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.34.28:997][989]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.34.28:997][989]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.34.29:022][989]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.34.29:043][989]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.34.29:046][989]LogInit: FAudioDevice initialized.
-[2020.04.19-17.34.29:058][989]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.34.29:060][989]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.34.29
-[2020.04.19-17.34.29:060][989]LogWorld: Bringing up level for play took: 0.001433
-[2020.04.19-17.34.29:061][989]LogOnline: OSS: Creating online subsystem instance for: :Context_5
-[2020.04.19-17.34.29:064][989]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,201
-[2020.04.19-17.34.29:064][989]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.29:065][989]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.34.29:456][ 35]LogTemp: Warning: Time has come
-[2020.04.19-17.34.38:955][174]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.34.39:964][295]LogTemp: Warning: Time has come
-[2020.04.19-17.34.47:514][201]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.34.49:114][393]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.34.50:582][569]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.34.51:675][700]LogTemp: Warning: Enemies left: 1
-[2020.04.19-17.34.53:067][867]LogTemp: Warning: Current Health: 20.000000
-[2020.04.19-17.34.54:658][ 58]LogTemp: Warning: Current Health: 10.000000
-[2020.04.19-17.34.56:125][234]LogTemp: Warning: Current Health: 0.000000
-[2020.04.19-17.34.57:218][365]LogTemp: Warning: Enemies left: 0
-[2020.04.19-17.34.57:226][366]LogTemp: Warning: All Enemies defeated
-[2020.04.19-17.34.57:226][366]LogTemp: Warning: You won!
-[2020.04.19-17.34.58:494][518]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.58:494][518]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.58:494][518]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.58:494][518]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.34.58:494][518]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.34.58:494][518]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.58:494][518]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.34.58:494][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.34.58:505][518]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.34.58:505][518]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.34.58:508][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.34.58:534][518]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.34.58:537][518]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.34.58:540][518]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
-[2020.04.19-17.34.58:593][523]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2020.04.19-17.35.55:806][795]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.35.56:247][795]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 121 classes and 0 folders.
-[2020.04.19-17.35.59:506][946]LogSlate: Window 'BP_WitchEnemy' being destroyed
-[2020.04.19-17.35.59:512][946]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.35.59:513][946]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.35.59:580][946]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.36.00:082][946]LogSlate: Took 0.001552 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2020.04.19-17.36.00:789][  0]LogSlate: Took 0.001484 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2020.04.19-17.36.03:135][188]LogRenderer: Reallocating scene render targets to support 972x460 Format 10 NumSamples 1 (Frame:1).
-[2020.04.19-17.37.14:620][557]LogSlate: Window 'New Channel' being destroyed
-[2020.04.19-17.37.28:608][996]BlueprintLog: New page: Compile BP_WitchEnemy
-[2020.04.19-17.37.29:743][996]LogUObjectHash: Compacting FUObjectHashTables data took  12.26ms
-[2020.04.19-17.37.31:182][136]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WitchEnemy279FC0E74633F7132EA7308EB069066A.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Enemies/BP_WitchEnemy.uasset'
-[2020.04.19-17.37.31:216][136]AssetCheck: New page: Asset Save: BP_WitchEnemy
-[2020.04.19-17.37.31:216][136]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.37.37:838][798]BlueprintLog: New page: Compile BP_WitchEnemy
-[2020.04.19-17.37.38:202][798]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
-[2020.04.19-17.37.38:732][854]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WitchEnemy7125B1394B57B156D5BFF1BC6995E202.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Enemies/BP_WitchEnemy.uasset'
-[2020.04.19-17.37.38:745][854]AssetCheck: New page: Asset Save: BP_WitchEnemy
-[2020.04.19-17.37.38:745][854]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.38.12:258][304]BlueprintLog: New page: Compile BP_WitchEnemy
-[2020.04.19-17.38.12:624][304]LogUObjectHash: Compacting FUObjectHashTables data took   4.83ms
-[2020.04.19-17.38.13:096][352]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WitchEnemy394107B54CAE9A4664473EA0C8EAAE99.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Enemies/BP_WitchEnemy.uasset'
-[2020.04.19-17.38.13:109][352]AssetCheck: New page: Asset Save: BP_WitchEnemy
-[2020.04.19-17.38.13:109][352]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.38.17:287][851]LogSlate: Window 'BP_WitchEnemy' being destroyed
-[2020.04.19-17.38.17:290][851]LogSlate: Window 'BP_WitchEnemy' being destroyed
-[2020.04.19-17.38.17:304][851]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.38.17:304][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.38.19:732][101]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.38.22:246][290]LogSlate: Window 'BP_Worker' being destroyed
-[2020.04.19-17.38.22:251][290]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.38.22:251][290]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.38.22:322][290]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.38.48:590][945]BlueprintLog: New page: Compile BP_Worker
-[2020.04.19-17.38.48:991][945]LogUObjectHash: Compacting FUObjectHashTables data took   5.46ms
-[2020.04.19-17.38.49:448][994]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Workers/BP_Worker" FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset" SILENT=true
-[2020.04.19-17.38.49:470][994]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_Worker0EC79C4C4F0915CC7958ED84B5F5DDF0.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset'
-[2020.04.19-17.38.49:483][994]AssetCheck: New page: Asset Save: BP_Worker
-[2020.04.19-17.38.49:483][994]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.38.55:503][697]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameModes/BP_KeepItAliveGameMode.BP_KeepItAliveGameMode
-[2020.04.19-17.38.58:861][ 34]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.38.58:861][ 34]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.39.05:453][806]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Spawners/Enemies/BP_FirstWave.BP_FirstWave
-[2020.04.19-17.39.12:580][576]BlueprintLog: New page: Compile BP_FirstWave
-[2020.04.19-17.39.12:983][576]LogUObjectHash: Compacting FUObjectHashTables data took   4.71ms
-[2020.04.19-17.39.13:381][615]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_FirstWaveE05DD35648460E17F77914AEFE5CA6A4.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Spawners/Enemies/BP_FirstWave.uasset'
-[2020.04.19-17.39.13:404][615]AssetCheck: New page: Asset Save: BP_FirstWave
-[2020.04.19-17.39.13:404][615]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spawners/Enemies/BP_FirstWave.BP_FirstWave
-[2020.04.19-17.39.20:251][415]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Spawners/Workers/BP_WorkersFirstWave.BP_WorkersFirstWave
-[2020.04.19-17.39.26:250][ 65]BlueprintLog: New page: Compile BP_WorkersFirstWave
-[2020.04.19-17.39.26:543][ 65]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
-[2020.04.19-17.39.26:976][108]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WorkersFirstWave198A17AC408651DC3DDD4C8DCEC72F50.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Spawners/Workers/BP_WorkersFirstWave.uasset'
-[2020.04.19-17.39.26:997][108]AssetCheck: New page: Asset Save: BP_WorkersFirstWave
-[2020.04.19-17.39.26:997][108]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spawners/Workers/BP_WorkersFirstWave.BP_WorkersFirstWave
-[2020.04.19-17.39.28:657][292]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.39.28:683][292]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.28:684][292]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.39.28:697][292]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:39:28)
-[2020.04.19-17.39.28:699][292]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.39.28:705][292]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006114s)
-[2020.04.19-17.39.28:709][292]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.39.28:715][292]LogPlayLevel: PIE: World Init took: (0.009573s)
-[2020.04.19-17.39.28:715][292]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.015857s)
-[2020.04.19-17.39.28:754][292]LogUObjectHash: Compacting FUObjectHashTables data took   3.54ms
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.39.28:758][292]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.39.28:758][292]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.39.28:760][292]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.39.28:760][292]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.39.28:789][292]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.39.28:815][292]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.39.28:816][292]LogInit: FAudioDevice initialized.
-[2020.04.19-17.39.28:837][292]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.39.28:841][292]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.39.28
-[2020.04.19-17.39.28:841][292]LogWorld: Bringing up level for play took: 0.002184
-[2020.04.19-17.39.28:850][292]LogOnline: OSS: Creating online subsystem instance for: :Context_14
-[2020.04.19-17.39.28:871][292]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,394
-[2020.04.19-17.39.28:872][292]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.28:873][292]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.39.29:162][324]LogTemp: Warning: Time has come
-[2020.04.19-17.39.32:863][767]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.39.32:863][767]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.39.32:863][767]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.32:864][767]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.39.32:864][767]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.39.32:864][767]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.39.32:864][767]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.39.32:865][767]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.39.32:874][767]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.39.32:874][767]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.32:878][767]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.39.32:916][767]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.39.32:920][767]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.39.32:925][767]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
-[2020.04.19-17.39.32:964][770]LogPlayLevel: Display: Destroying online subsystem :Context_14
-[2020.04.19-17.39.35:504][ 59]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.35:504][ 59]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.39.35:504][ 59]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:39:35)
-[2020.04.19-17.39.35:504][ 59]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.39.35:507][ 59]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003165s)
-[2020.04.19-17.39.35:508][ 59]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.39.35:508][ 59]LogPlayLevel: PIE: World Init took: (0.001071s)
-[2020.04.19-17.39.35:508][ 59]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.004373s)
-[2020.04.19-17.39.35:547][ 59]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.39.35:548][ 59]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.39.35:548][ 59]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.39.35:548][ 59]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.39.35:573][ 59]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.39.35:592][ 59]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.39.35:594][ 59]LogInit: FAudioDevice initialized.
-[2020.04.19-17.39.35:656][ 59]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.39.35:657][ 59]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.39.35:661][ 59]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.39.35
-[2020.04.19-17.39.35:661][ 59]LogWorld: Bringing up level for play took: 0.002824
-[2020.04.19-17.39.35:662][ 59]LogOnline: OSS: Creating online subsystem instance for: :Context_15
-[2020.04.19-17.39.35:674][ 59]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,409
-[2020.04.19-17.39.35:675][ 59]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.39.35:675][ 59]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.39.35:716][ 60]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
-[2020.04.19-17.39.35:984][ 91]LogTemp: Warning: Time has come
-[2020.04.19-17.39.45:481][230]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.39.46:490][351]LogTemp: Warning: Time has come
-[2020.04.19-17.40.02:285][242]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.40.02:285][242]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.40.02:285][242]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.40.02:285][242]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.40.02:285][242]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.40.02:297][242]LogSlate: Window 'KeepItAlive Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2020.04.19-17.40.02:301][242]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.40.02:302][242]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.40.02:302][242]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.40.02:310][242]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.40.02:310][242]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.40.02:315][242]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.40.02:352][242]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.40.02:359][242]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
-[2020.04.19-17.40.02:385][244]LogPlayLevel: Display: Destroying online subsystem :Context_15
-[2020.04.19-17.41.19:532][690]BlueprintLog: New page: Compile BP_Worker
-[2020.04.19-17.41.19:832][690]LogUObjectHash: Compacting FUObjectHashTables data took   3.57ms
-[2020.04.19-17.41.20:417][745]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Workers/BP_Worker" FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset" SILENT=true
-[2020.04.19-17.41.20:437][745]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_Worker36EA83304CDE5BB63D15A0B370831CD7.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset'
-[2020.04.19-17.41.20:449][745]AssetCheck: New page: Asset Save: BP_Worker
-[2020.04.19-17.41.20:449][745]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.41.23:894][137]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.41.33:846][ 65]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2020.04.19-17.41.33:872][ 65]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.41.33:872][ 65]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.41.33:872][ 65]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:41:33)
-[2020.04.19-17.41.33:873][ 65]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.41.33:876][ 65]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003893s)
-[2020.04.19-17.41.33:877][ 65]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.41.33:878][ 65]LogPlayLevel: PIE: World Init took: (0.001129s)
-[2020.04.19-17.41.33:878][ 65]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005170s)
-[2020.04.19-17.41.33:919][ 65]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.41.33:921][ 65]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.41.33:921][ 65]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.41.33:921][ 65]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.41.33:947][ 65]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.41.33:967][ 65]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.41.33:968][ 65]LogInit: FAudioDevice initialized.
-[2020.04.19-17.41.34:025][ 65]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.41.34:026][ 65]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.41.34:028][ 65]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.41.34
-[2020.04.19-17.41.34:028][ 65]LogWorld: Bringing up level for play took: 0.001693
-[2020.04.19-17.41.34:028][ 65]LogOnline: OSS: Creating online subsystem instance for: :Context_17
-[2020.04.19-17.41.34:033][ 65]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,768
-[2020.04.19-17.41.34:034][ 65]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.41.34:034][ 65]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.41.34:349][ 99]LogTemp: Warning: Time has come
-[2020.04.19-17.41.43:851][239]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.41.44:860][360]LogTemp: Warning: Time has come
-[2020.04.19-17.41.59:170][ 77]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.41.59:170][ 77]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.41.59:170][ 77]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.41.59:170][ 77]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.41.59:170][ 77]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.41.59:183][ 77]LogSlate: Window 'KeepItAlive Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2020.04.19-17.41.59:188][ 77]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.41.59:188][ 77]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.41.59:188][ 77]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.41.59:193][ 77]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.41.59:193][ 77]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.41.59:198][ 77]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.41.59:239][ 77]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.41.59:249][ 77]LogUObjectHash: Compacting FUObjectHashTables data took   3.03ms
-[2020.04.19-17.41.59:276][ 79]LogPlayLevel: Display: Destroying online subsystem :Context_17
-[2020.04.19-17.42.22:595][406]BlueprintLog: New page: Compile BP_WitchEnemy
-[2020.04.19-17.42.22:891][406]LogUObjectHash: Compacting FUObjectHashTables data took   3.62ms
-[2020.04.19-17.42.23:396][453]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WitchEnemy32A80C09444A29B2A914B5AD3F8D4B76.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Enemies/BP_WitchEnemy.uasset'
-[2020.04.19-17.42.23:408][453]AssetCheck: New page: Asset Save: BP_WitchEnemy
-[2020.04.19-17.42.23:408][453]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.42.30:524][181]BlueprintLog: New page: Compile BP_Worker
-[2020.04.19-17.42.30:824][181]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
-[2020.04.19-17.42.31:202][218]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Workers/BP_Worker" FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset" SILENT=true
-[2020.04.19-17.42.31:223][218]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WorkerB30B70134ACFC49426F14DB8DB567DEA.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset'
-[2020.04.19-17.42.31:235][218]AssetCheck: New page: Asset Save: BP_Worker
-[2020.04.19-17.42.31:235][218]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.42.33:001][410]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2020.04.19-17.42.33:027][410]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.42.33:027][410]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.42.33:028][410]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:42:33)
-[2020.04.19-17.42.33:028][410]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.42.33:031][410]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003231s)
-[2020.04.19-17.42.33:032][410]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.42.33:032][410]LogPlayLevel: PIE: World Init took: (0.001089s)
-[2020.04.19-17.42.33:032][410]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.004455s)
-[2020.04.19-17.42.33:070][410]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
-[2020.04.19-17.42.33:070][410]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.42.33:071][410]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.42.33:071][410]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.42.33:072][410]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.42.33:072][410]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.42.33:096][410]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.42.33:096][410]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.42.33:097][410]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.42.33:116][410]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.42.33:118][410]LogInit: FAudioDevice initialized.
-[2020.04.19-17.42.33:172][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.42.33:172][410]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.42.33:174][410]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.42.33
-[2020.04.19-17.42.33:174][410]LogWorld: Bringing up level for play took: 0.001421
-[2020.04.19-17.42.33:174][410]LogOnline: OSS: Creating online subsystem instance for: :Context_18
-[2020.04.19-17.42.33:179][410]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,086
-[2020.04.19-17.42.33:180][410]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.42.33:180][410]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.42.33:505][445]LogTemp: Warning: Time has come
-[2020.04.19-17.42.43:008][585]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.42.44:017][706]LogTemp: Warning: Time has come
-[2020.04.19-17.42.53:910][893]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.42.53:910][893]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.42.53:910][893]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.42.53:910][893]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.42.53:910][893]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.42.53:923][893]LogSlate: Window 'KeepItAlive Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2020.04.19-17.42.53:926][893]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.42.53:927][893]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.42.53:927][893]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.42.53:937][893]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.42.53:938][893]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.42.53:942][893]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.42.53:983][893]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.42.53:991][893]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
-[2020.04.19-17.42.54:018][895]LogPlayLevel: Display: Destroying online subsystem :Context_18
-[2020.04.19-17.43.22:434][359]LogSlate: Window 'Project Settings' being destroyed
-[2020.04.19-17.43.22:438][359]LogSlate: Window 'Project Settings' being destroyed
-[2020.04.19-17.43.51:687][666]BlueprintLog: New page: Compile BP_Worker
-[2020.04.19-17.43.51:991][666]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
-[2020.04.19-17.43.52:455][716]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Workers/BP_Worker" FILE="../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset" SILENT=true
-[2020.04.19-17.43.52:476][716]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_Worker768C66FF4BAAB052A815709B2D211DE9.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Workers/BP_Worker.uasset'
-[2020.04.19-17.43.52:488][716]AssetCheck: New page: Asset Save: BP_Worker
-[2020.04.19-17.43.52:489][716]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Workers/BP_Worker.BP_Worker
-[2020.04.19-17.44.35:583][ 44]BlueprintLog: New page: Compile BP_WitchEnemy
-[2020.04.19-17.44.35:883][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   3.92ms
-[2020.04.19-17.44.36:371][ 92]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_WitchEnemyF1F5529640049BBC73EE2C8A89244DAE.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/Enemies/BP_WitchEnemy.uasset'
-[2020.04.19-17.44.36:383][ 92]AssetCheck: New page: Asset Save: BP_WitchEnemy
-[2020.04.19-17.44.36:383][ 92]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Enemies/BP_WitchEnemy.BP_WitchEnemy
-[2020.04.19-17.44.39:111][405]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2020.04.19-17.44.39:138][405]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.44.39:138][405]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.44.39:138][405]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:44:39)
-[2020.04.19-17.44.39:138][405]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.44.39:142][405]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003214s)
-[2020.04.19-17.44.39:143][405]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.44.39:143][405]LogPlayLevel: PIE: World Init took: (0.001085s)
-[2020.04.19-17.44.39:143][405]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.004446s)
-[2020.04.19-17.44.39:184][405]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.44.39:186][405]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.44.39:186][405]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.44.39:186][405]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.44.39:211][405]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.44.39:231][405]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.44.39:232][405]LogInit: FAudioDevice initialized.
-[2020.04.19-17.44.39:273][405]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.44.39:273][405]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.44.39:275][405]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.44.39
-[2020.04.19-17.44.39:276][405]LogWorld: Bringing up level for play took: 0.001512
-[2020.04.19-17.44.39:276][405]LogOnline: OSS: Creating online subsystem instance for: :Context_19
-[2020.04.19-17.44.39:280][405]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,015
-[2020.04.19-17.44.39:281][405]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.44.39:281][405]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.44.39:621][442]LogTemp: Warning: Time has come
-[2020.04.19-17.44.49:112][581]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.44.50:122][702]LogTemp: Warning: Time has come
-[2020.04.19-17.45.00:216][909]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.45.00:216][909]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.45.00:216][909]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.45.00:216][909]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.45.00:216][909]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.45.00:229][909]LogSlate: Window 'KeepItAlive Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2020.04.19-17.45.00:233][909]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.45.00:233][909]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.45.00:234][909]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.45.00:238][909]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.45.00:238][909]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.45.00:243][909]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.45.00:283][909]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.45.00:290][909]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
-[2020.04.19-17.45.00:317][911]LogPlayLevel: Display: Destroying online subsystem :Context_19
-[2020.04.19-17.46.35:814][379]LogHotReload: New module detected: UE4Editor-KeepItAlive-0004.dll
-[2020.04.19-17.46.37:174][384]LogHotReload: Starting Hot-Reload from IDE
-[2020.04.19-17.46.37:259][384]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
-[2020.04.19-17.46.37:357][384]LogClass: EInGameState HotReload.
-[2020.04.19-17.46.37:357][384]LogClass: SpawnableCharacter HotReload.
-[2020.04.19-17.46.37:380][384]LogContentBrowser: Native class hierarchy updated for 'KeepItAlive' in 0.0037 seconds. Added 17 classes and 2 folders.
-[2020.04.19-17.46.37:385][384]Display: HotReload successful (8 functions remapped  1 scriptstructs remapped)
-[2020.04.19-17.46.37:528][384]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
-[2020.04.19-17.46.37:545][384]LogContentBrowser: Native class hierarchy populated in 0.0169 seconds. Added 3034 classes and 722 folders.
-[2020.04.19-17.46.37:561][384]Display: HotReload took  0.4s.
-[2020.04.19-17.46.59:549][449]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2020.04.19-17.46.59:549][449]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2020.04.19-17.47.04:725][ 51]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameModes/BP_KeepItAliveGameMode.BP_KeepItAliveGameMode
-[2020.04.19-17.47.09:819][545]BlueprintLog: New page: Compile BP_KeepItAliveGameMode
-[2020.04.19-17.47.10:228][545]LogUObjectHash: Compacting FUObjectHashTables data took   6.07ms
-[2020.04.19-17.47.10:582][579]LogSavePackage: Moving '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/BP_KeepItAliveGameMode18DBA65543D5A9D16E94DFA413F4C6F3.tmp' to '../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Content/Blueprints/GameModes/BP_KeepItAliveGameMode.uasset'
-[2020.04.19-17.47.10:601][579]AssetCheck: New page: Asset Save: BP_KeepItAliveGameMode
-[2020.04.19-17.47.10:601][579]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameModes/BP_KeepItAliveGameMode.BP_KeepItAliveGameMode
-[2020.04.19-17.47.12:438][782]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2020.04.19-17.47.12:474][782]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.12:474][782]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.47.12:474][782]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:47:12)
-[2020.04.19-17.47.12:474][782]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.47.12:478][782]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003434s)
-[2020.04.19-17.47.12:479][782]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.47.12:479][782]LogPlayLevel: PIE: World Init took: (0.001072s)
-[2020.04.19-17.47.12:479][782]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.004652s)
-[2020.04.19-17.47.12:531][782]LogUObjectHash: Compacting FUObjectHashTables data took   5.32ms
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.47.12:531][782]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.47.12:531][782]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.47.12:532][782]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.47.12:532][782]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.47.12:559][782]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.47.12:580][782]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.47.12:581][782]LogInit: FAudioDevice initialized.
-[2020.04.19-17.47.12:634][782]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.47.12:634][782]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.47.12:636][782]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.47.12
-[2020.04.19-17.47.12:637][782]LogWorld: Bringing up level for play took: 0.001515
-[2020.04.19-17.47.12:637][782]LogOnline: OSS: Creating online subsystem instance for: :Context_21
-[2020.04.19-17.47.12:642][782]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,623
-[2020.04.19-17.47.12:642][782]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.12:642][782]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.47.12:945][810]LogTemp: Warning: Time has come
-[2020.04.19-17.47.15:481][103]LogSlate: Window 'KeepItAlive Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2020.04.19-17.47.15:484][103]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.15:484][103]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.47.15:484][103]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.15:484][103]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.47.15:485][103]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.47.15:491][103]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.47.15:492][103]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.15:497][103]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.47.15:548][103]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.15:557][103]LogUObjectHash: Compacting FUObjectHashTables data took   4.72ms
-[2020.04.19-17.47.15:581][104]LogPlayLevel: Display: Destroying online subsystem :Context_21
-[2020.04.19-17.47.17:852][364]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.17:852][364]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.47.17:852][364]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:47:17)
-[2020.04.19-17.47.17:852][364]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.47.17:856][364]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004157s)
-[2020.04.19-17.47.17:857][364]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.47.17:857][364]LogPlayLevel: PIE: World Init took: (0.001106s)
-[2020.04.19-17.47.17:857][364]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.005427s)
-[2020.04.19-17.47.17:906][364]LogUObjectHash: Compacting FUObjectHashTables data took   4.07ms
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.47.17:906][364]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.47.17:906][364]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.47.17:907][364]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.47.17:907][364]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.47.17:932][364]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.47.17:952][364]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.47.17:954][364]LogInit: FAudioDevice initialized.
-[2020.04.19-17.47.17:965][364]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.47.17:967][364]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.47.17
-[2020.04.19-17.47.17:968][364]LogWorld: Bringing up level for play took: 0.002010
-[2020.04.19-17.47.17:968][364]LogOnline: OSS: Creating online subsystem instance for: :Context_22
-[2020.04.19-17.47.17:970][364]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel 0,705
-[2020.04.19-17.47.17:970][364]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.17:971][364]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.47.18:318][405]LogTemp: Warning: Time has come
-[2020.04.19-17.47.21:819][825]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.47.22:828][946]LogTemp: Warning: Time has come
-[2020.04.19-17.47.31:847][ 28]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.31:847][ 28]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.31:847][ 28]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.31:847][ 28]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.47.31:847][ 28]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.47.31:847][ 28]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.31:847][ 28]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.47.31:848][ 28]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.47.31:857][ 28]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.47.31:857][ 28]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.47.31:863][ 28]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.47.31:911][ 28]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.47.31:917][ 28]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.47.31:921][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   3.80ms
-[2020.04.19-17.47.31:948][ 30]LogPlayLevel: Display: Destroying online subsystem :Context_22
-[2020.04.19-17.48.53:855][180]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Projectiles/BP_BasicMissile.BP_BasicMissile
-[2020.04.19-17.48.56:096][323]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.48.56:096][323]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.48.56:161][323]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Projectiles/BP_BasicMissile.BP_BasicMissile
-[2020.04.19-17.53.35:780][259]LogHotReload: New module detected: UE4Editor-KeepItAlive-0005.dll
-[2020.04.19-17.53.37:150][264]LogHotReload: Starting Hot-Reload from IDE
-[2020.04.19-17.53.37:249][264]LogUObjectHash: Compacting FUObjectHashTables data took   4.87ms
-[2020.04.19-17.53.37:305][264]LogClass: EInGameState HotReload.
-[2020.04.19-17.53.37:305][264]LogClass: SpawnableCharacter HotReload.
-[2020.04.19-17.53.37:327][264]LogContentBrowser: Native class hierarchy updated for 'KeepItAlive' in 0.0006 seconds. Added 17 classes and 2 folders.
-[2020.04.19-17.53.37:333][264]Display: HotReload successful (8 functions remapped  1 scriptstructs remapped)
-[2020.04.19-17.53.37:509][264]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
-[2020.04.19-17.53.37:521][264]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 3034 classes and 722 folders.
-[2020.04.19-17.53.37:535][264]Display: HotReload took  0.4s.
-[2020.04.19-17.55.00:745][  2]LogTemp: Repeating last play command: Selected Viewport
-[2020.04.19-17.55.00:797][  2]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.55.00:798][  2]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2020.04.19-17.55.00:799][  2]PIE: New page: PIE session: MainLevel (19 апр. 2020 г., 23:55:00)
-[2020.04.19-17.55.00:799][  2]LogPlayLevel: Creating play world package: /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.55.00:805][  2]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005834s)
-[2020.04.19-17.55.00:806][  2]LogAIModule: Creating AISystem for world MainLevel
-[2020.04.19-17.55.00:806][  2]LogPlayLevel: PIE: World Init took: (0.001438s)
-[2020.04.19-17.55.00:806][  2]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel to /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel (0.007455s)
-[2020.04.19-17.55.00:897][  2]LogUObjectHash: Compacting FUObjectHashTables data took   7.52ms
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.19-17.55.00:902][  2]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.19-17.55.00:902][  2]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.19-17.55.00:903][  2]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.19-17.55.00:903][  2]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Name: Динамики (Realtek High Definition Audio)
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Is Default: Yes
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: Channel Order:
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.19-17.55.00:930][  2]LogAudioMixer: Display: 1: FrontRight
-[2020.04.19-17.55.00:951][  2]LogAudioMixer: Display: Using Audio Device Динамики (Realtek High Definition Audio)
-[2020.04.19-17.55.00:953][  2]LogInit: FAudioDevice initialized.
-[2020.04.19-17.55.00:962][  2]LogLoad: Game class is 'BP_KeepItAliveGameMode_C'
-[2020.04.19-17.55.00:965][  2]LogWorld: Bringing World /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 0) at 2020.04.19-20.55.00
-[2020.04.19-17.55.00:965][  2]LogWorld: Bringing up level for play took: 0.002511
-[2020.04.19-17.55.00:966][  2]LogOnline: OSS: Creating online subsystem instance for: :Context_25
-[2020.04.19-17.55.00:969][  2]PIE: Play in editor start time for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel -0,296
-[2020.04.19-17.55.00:969][  2]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.55.00:969][  2]LogTemp: Warning: Enemy wave preparing
-[2020.04.19-17.55.01:248][ 34]LogTemp: Warning: Time has come
-[2020.04.19-17.55.04:746][454]LogTemp: Warning: Enemy wave begun
-[2020.04.19-17.55.05:755][575]LogTemp: Warning: Time has come
-[2020.04.19-17.55.08:931][956]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.55.08:931][956]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.55.08:931][956]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.55.08:932][956]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.55.08:932][956]LogWorld: BeginTearingDown for /Game/2DSideScrollerCPP/Maps/UEDPIE_0_MainLevel
-[2020.04.19-17.55.08:932][956]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.55.08:933][956]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
-[2020.04.19-17.55.08:933][956]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.55.08:942][956]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2020.04.19-17.55.08:942][956]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel' with GeneratedClass '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel_C' with ClassGeneratedBy '/Game/2DSideScrollerCPP/Maps/MainLevel.MainLevel:PersistentLevel.MainLevel'
-[2020.04.19-17.55.08:949][956]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.19-17.55.09:001][956]LogAudioMixer: Display: No commands were queued while flushing the source manager.
-[2020.04.19-17.55.09:006][956]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.19-17.55.09:016][956]LogUObjectHash: Compacting FUObjectHashTables data took   6.45ms
-[2020.04.19-17.55.09:034][957]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[r.ForwardShading:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:345][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:348][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.20-05.53.54:348][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.20-05.53.54:349][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:349][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.20-05.53.54:350][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.20-05.53.54:350][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:350][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.20-05.53.54:350][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.20-05.53.54:350][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.20-05.53.54:350][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.20-05.53.54:350][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.20-05.53.54:352][  0]LogHAL: Display: Platform has ~ 8 GB [8554160128 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.04.20-05.53.54:352][  0]LogInit: Going up to parent DeviceProfile []
+[2020.04.20-05.53.54:352][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:352][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.20-05.53.54:352][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.20-05.53.54:353][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Scalability.ini]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.04.20-05.53.54:354][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Saved/Config/Windows/Engine.ini]
+[2020.04.20-05.53.54:354][  0]LogInit: Computer: WIN-H8OU5S8TNS7
+[2020.04.20-05.53.54:354][  0]LogInit: User: Admin
+[2020.04.20-05.53.54:355][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.04.20-05.53.54:355][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.20-05.53.54:355][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2020.04.20-05.53.54:355][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.20-05.53.54:355][  0]LogMemory: Process Physical Memory: 105.08 MB used, 105.09 MB peak
+[2020.04.20-05.53.54:355][  0]LogMemory: Process Virtual Memory: 99.84 MB used, 99.84 MB peak
+[2020.04.20-05.53.54:355][  0]LogMemory: Physical Memory: 5166.71 MB used,  2991.18 MB free, 8157.88 MB total
+[2020.04.20-05.53.54:355][  0]LogMemory: Virtual Memory: 5121.08 MB used,  134212608.00 MB free, 134217728.00 MB total
+[2020.04.20-05.53.54:356][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.04.20-05.53.54:367][  0]LogInit: Using OS detected language (ru-RU).
+[2020.04.20-05.53.54:367][  0]LogInit: Using OS detected locale (ru-RU).
+[2020.04.20-05.53.54:368][  0]LogTextLocalizationManager: No specific localization for 'ru-RU' exists, so the 'ru' localization will be used.
+[2020.04.20-05.53.54:368][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/ru/Editor.locres' could not be opened for reading!
+[2020.04.20-05.53.54:368][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/ru/EditorTutorials.locres' could not be opened for reading!
+[2020.04.20-05.53.54:368][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/ru/Keywords.locres' could not be opened for reading!
+[2020.04.20-05.53.54:368][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/ru/Category.locres' could not be opened for reading!
+[2020.04.20-05.53.54:369][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/ru/ToolTips.locres' could not be opened for reading!
+[2020.04.20-05.53.54:369][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/ru/PropertyNames.locres' could not be opened for reading!
+[2020.04.20-05.53.54:369][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/ru/Engine.locres' could not be opened for reading!
+[2020.04.20-05.53.54:370][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.20-05.53.54:392][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.20-05.53.54:392][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.20-05.53.54:513][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.20-05.53.54:513][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.04.20-05.53.54:513][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.04.20-05.53.54:513][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.20-05.53.54:546][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2020.04.20-05.53.54:546][  0]LogD3D11RHI:       6081/0/4078 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.04.20-05.53.54:548][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.20-05.53.54:548][  0]LogD3D11RHI:       0/0/4078 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.20-05.53.54:548][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.04.20-05.53.54:556][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.20-05.53.54:556][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2020.04.20-05.53.54:556][  0]LogWindows: EnumDisplayDevices:
+[2020.04.20-05.53.54:556][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2020.04.20-05.53.54:556][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2020.04.20-05.53.54:556][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2020.04.20-05.53.54:557][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2020.04.20-05.53.54:557][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.04.20-05.53.54:557][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2020.04.20-05.53.54:557][  0]LogD3D11RHI:   Driver Version: 378.66 (internal:21.21.13.7866, unified:378.66)
+[2020.04.20-05.53.54:557][  0]LogD3D11RHI:      Driver Date: 2-9-2017
+[2020.04.20-05.53.54:557][  0]LogRHI: Texture pool is 4256 MB (70% of 6081 MB)
+[2020.04.20-05.53.54:574][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2020.04.20-05.53.54:574][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.20-05.53.54:587][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.04.20-05.53.54:871][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.04.20-05.53.54:910][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.04.20-05.53.54:911][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.04.20-05.53.54:933][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.04.20-05.53.54:933][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.04.20-05.53.54:942][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.04.20-05.53.54:951][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.04.20-05.53.54:959][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.04.20-05.53.54:968][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.04.20-05.53.54:977][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.04.20-05.53.54:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.04.20-05.53.55:018][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.04.20-05.53.55:018][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.04.20-05.53.55:035][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.04.20-05.53.55:035][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.04.20-05.53.55:045][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.04.20-05.53.55:054][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.04.20-05.53.55:063][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.04.20-05.53.55:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.04.20-05.53.55:072][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.20-05.53.55:075][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.04.20-05.53.55:093][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/Intermediate/Shaders/WorkingDirectory/17536/).
+[2020.04.20-05.53.55:094][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/57EE144F42D7E7178485A890EEC164AD/'.
+[2020.04.20-05.53.55:095][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
+[2020.04.20-05.53.55:929][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.20-05.53.55:987][  0]LogDerivedDataCache: Loaded boot cache 0.06s 78MB C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.20-05.53.55:987][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.04.20-05.53.55:988][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.20-05.53.55:988][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.20-05.53.55:988][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/Admin/Documents/Repos/Keep It Alive/KeepItAlive/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.20-05.53.55:988][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.20-05.53.55:999][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.20-05.53.55:999][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.20-05.53.55:999][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.04.20-05.53.56:000][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.20-05.53.56:000][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.20-05.53.56:000][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.20-05.53.56:015][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.20-05.53.57:134][  0]LogSlate: Using FreeType 2.10.0
+[2020.04.20-05.53.57:134][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.20-05.53.57:185][  0]LogAssetRegistry: FAssetRegistry took 0.0030 seconds to start up
+[2020.04.20-05.53.57:561][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.20-05.53.57:640][  0]LogMaterial: Display: Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.

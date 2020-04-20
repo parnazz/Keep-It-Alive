@@ -1,27 +1,27 @@
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameMode.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameMode.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveCharacter.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperCharacter.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperCharacter.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\BasicProjectile.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperSpriteActor.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperSpriteActor.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BasicProjectile.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveCharacter.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameStateBase.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
-C:\UnrealEngine\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameStateBase.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\BaseSpawnActor.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\BaseNPC.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseNPC.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseSpawnActor.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameMode.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameMode.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveCharacter.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperCharacter.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperCharacter.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\BasicProjectile.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperSpriteActor.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperSpriteActor.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BasicProjectile.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveCharacter.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameStateBase.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\KeepItAliveGameStateBase.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\BaseSpawnActor.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\BaseNPC.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseNPC.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BaseSpawnActor.generated.h

@@ -232,8 +232,8 @@
 /I ..\Plugins\2D\Paper2D\Source
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Public
-/I "C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive"
-/I "C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source"
+/I C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive
+/I C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -257,18 +257,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I C:\VisualStudio\VC\Tools\MSVC\14.24.28314\INCLUDE
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameMode.cpp"
-/FI"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h"
-/Fo"C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveGameMode.cpp.obj"
+/FI"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\KeepItAliveEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive\KeepItAliveGameMode.cpp"
+/FI"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h"
+/Fo"C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\KeepItAliveGameMode.cpp.obj"
 /TP
 /GR-
 /W4

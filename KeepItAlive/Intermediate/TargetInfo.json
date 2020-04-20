@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "KeepItAlive",
-			"Path": "C:\\Users\\Admin\\Documents\\Repos\\Keep It Alive\\KeepItAlive\\Source\\KeepItAlive.Target.cs",
+			"Path": "C:\\Users\\UserPushka\\Desktop\\Keep-It-Alive\\KeepItAlive\\Source\\KeepItAlive.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "KeepItAliveEditor",
-			"Path": "C:\\Users\\Admin\\Documents\\Repos\\Keep It Alive\\KeepItAlive\\Source\\KeepItAliveEditor.Target.cs",
+			"Path": "C:\\Users\\UserPushka\\Desktop\\Keep-It-Alive\\KeepItAlive\\Source\\KeepItAliveEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

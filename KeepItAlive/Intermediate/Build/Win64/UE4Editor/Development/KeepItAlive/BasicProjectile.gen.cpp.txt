@@ -1,7 +1,7 @@
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive/BasicProjectile.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperSpriteActor.h
-C:\UnrealEngine\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperSpriteActor.generated.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BasicProjectile.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive/BasicProjectile.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Source\Paper2D\Classes\PaperSpriteActor.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D\PaperSpriteActor.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\BasicProjectile.generated.h

@@ -1,9 +1,9 @@
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Source\KeepItAlive/WorkerStateMachine.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
-C:\UnrealEngine\UE_4.24\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
-C:\Users\Admin\Documents\Repos\Keep It Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\WorkerStateMachine.generated.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Development\KeepItAlive\Definitions.KeepItAlive.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Source\KeepItAlive/WorkerStateMachine.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+C:\Users\UserPushka\Desktop\Keep-It-Alive\KeepItAlive\Intermediate\Build\Win64\UE4Editor\Inc\KeepItAlive\WorkerStateMachine.generated.h
